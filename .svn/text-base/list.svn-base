@@ -1,0 +1,11 @@
+http://www.zlib.net/zlib-1.2.3.tar.gz
+http://downloads.sourceforge.net/libpng/libpng-1.2.18.tar.bz2
+http://download.savannah.gnu.org/releases/freetype/freetype-2.3.5.tar.bz2
+http://www.fftw.org/fftw-3.1.2.tar.gz
+http://www.python.org/ftp/python/2.5.1/Python-2.5.1.tar.bz2
+ftp://ftp.hdfgroup.uiuc.edu/pub/outgoing/hdf5/hdf5-1.8.0-pre/hdf5-1.8.0-beta2.tar.gz  --enable-linux-lfs --enable-fortran --enable-cxx --prefix=/usr
+http://www.pytables.org/download/stable/pytables-2.0.tar.gz
+http://cens.ioc.ee/projects/f2py2e/2.x/F2PY-2-latest.tar.gz
+http://www.parallelpython.com/downloads/pp/pp-1.4.3.tar.bz2
+http://www-unix.mcs.anl.gov/mpi/mpich/downloads/mpich2-1.0.5p4.tar.gz
+ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.36.tar.gz

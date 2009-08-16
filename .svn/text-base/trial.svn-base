@@ -1,0 +1,3 @@
+http://www.python.org/ftp/python/2.5.1/Python-2.5.1.tar.bz2
+ftp://ftp.hdfgroup.uiuc.edu/pub/outgoing/hdf5/hdf5-1.8.0-pre/hdf5-1.8.0-beta2.tar.gz  path=sources --enable-linux-lfs --enable-fortran --enable-cxx --prefix=/usr
+http://www.pytables.org/download/stable/pytables-2.0.tar.gz

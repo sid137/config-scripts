@@ -1,0 +1,4 @@
+http://svn.scipy.org/svn/numpy/trunk
+http://svn.scipy.org/svn/scipy/trunk
+http://matplotlib.svn.sourceforge.net/svnroot/matplotlib/trunk/matplotlib
+http://svn.open-mpi.org/svn/ompi/trunk --with-platform=optimized

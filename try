@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+file=${1:-trial}
+while read url line
+do
+     echo "Url: $url"
+     echo "Line: $line"
+     archive=${url##*/}
+     echo "Archive: $archive"
+     path=`expr "$line" : 'path=\([^ ]*\)'`
+     line=${line#path* }
+     cmd=`expr "$line" : 'cmd=\([^ ]*\)'`
+     line=${line#cmd* }
+     echo "Path: $path"
+     echo "Args: $line"
+     echo "DONE!!!"
+done < $file
+

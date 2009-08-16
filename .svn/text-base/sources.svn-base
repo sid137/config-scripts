@@ -1,0 +1,7 @@
+svn co http://svn.python.org/projects/stackless/tags/python-2.51/ stackless
+svn co http://svn.scipy.org/svn/numpy/trunk numpy
+svn co http://svn.scipy.org/svn/scipy/trunk scipy
+svn co http://ipython.scipy.org/svn/ipython/ipython/trunk ipython
+svn co http://ipython.scipy.org/svn/ipython/pyreadline/trunk pyreadline
+svn co http://ipython.scipy.org/svn/ipython/ipython1/trunk ipython1
+svn co http://svn.python.org/projects/sandbox/trunk/setuptools/ setuptools

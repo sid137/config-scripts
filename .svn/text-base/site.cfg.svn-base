@@ -1,0 +1,15 @@
+[DEFAULT]
+library_dirs = /usr/local/lib
+include_dirs = /usr/local/include
+
+[blas]
+blas_libs = cblas, acml
+library_dirs = /opt/acml3.6.0/gnu32/lib
+include_dirs =  /usr/local/src/CBLAS/src
+
+[lapack]
+language = f77
+lapack_libs = acml
+library_dirs = /opt/acml3.6.0/gnu32/lib
+include_dirs = /opt/acml3.6.0/gnu32/include
+

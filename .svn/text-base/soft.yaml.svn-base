@@ -1,0 +1,91 @@
+# Ec2 Specific
+- cmd: >-
+    cd /dev
+    /sbin/MAKEDEV console
+    /sbin/MAKEDEV std
+    /sbin/MAKEDEV generic
+
+#freetype, libpng, fftw, zlib
+
+# Zlib
+- file: /home/sid137/projects/scripts/zlib-1.2.3.tar.gz
+
+# Slack
+- dir: /home/sid137/src/slack-0.14.1
+
+######## Apt Packages
+# Basic Compilation
+- apt_pkg: autoconf automake libtool make flex bzip2 gcc-3.4 g++ gfortran-4.2 subversion
+
+# Standard
+- apt_pkg: wget curl vim nano tar p7zip bzip2 unzip
+
+# G95
+- source: http://ftp.g95.org/g95_source.tgz
+    
+######## Python  things
+# Python
+- source: http://www.python.org/ftp/python/2.5.1/Python-2.5.1.tar.bz2
+
+# Stackless
+- svn: http://svn.python.org/projects/stackless/branches/release25-maint stackless
+
+# Python tools
+- svn: http://ipython.scipy.org/svn/ipython/pyreadline/trunk pyreadline
+
+# Python programs
+- source: http://www.parallelpython.com/downloads/pp/pp-1.4.3.tar.bz2
+
+# Numpy
+- svn: http://svn.scipy.org/svn/numpy/trunk numpy
+
+# Scipy
+- svn: http://svn.scipy.org/svn/scipy/trunk scipy
+
+#Matplotlib
+#- source: http://dfn.dl.sourceforge.net/sourceforge/matplotlib/matplotlib-0.91.1.tar.gz
+# svn:  https://matplotlib.svn.sourceforge.net/svnroot/matplotlib matplotlib
+#- apt_src:   >- 
+#    deb http://anakonda.altervista.org/debian packages/
+#    deb-src http://anakonda.altervista.org/debian sources/
+#- apt_pkg: python-matplotlib python-matplotlib-doc
+
+# Parallel Python
+- source: http://www.parallelpython.com/downloads/pp/pp-1.5.tar.bz2
+
+# PyYaml
+- svn: http://svn.pyyaml.org/pyyaml/trunk pyyaml-trunk
+  source: http://pyyaml.org/download/pyyaml/PyYAML-3.05.tar.gz
+# Syck
+- svn: http://code.whytheluckystiff.net/svn/syck/trunk syck
+# PySyck
+- svn: http://svn.pyyaml.org/pysyck/trunk pysyck
+
+# F2Py
+- source: http://cens.ioc.ee/projects/f2py2e/2.x/F2PY-2-latest.tar.gz
+
+- source: ftp://ftp.tummy.com/pub/python-memcached/python-memcached-latest.tar.gz
+- source: http://www.mcs.anl.gov/research/projects/mpich2/downloads/tarballs/mpich2-1.0.6p1.tar.gz
+#- source: http://www-unix.mcs.anl.gov/mpi/mpich/downloads/mpich2-1.0.5p4.tar.gz
+
+
+# HDF5
+- source: ftp://ftp.hdfgroup.org/HDF5/current/src/hdf5-1.6.6.tar.gz
+  flags:   --prefix=/usr/local/hdf5 --enable-fortran --enable-cxx
+  env:   
+    F9X: /home/sid137/bin/g95
+
+#Pytables
+- source:  http://www.pytables.org/download/stable/pytables-2.0.2.tar.gz
+
+
+# Memcached
+- svn: http://code.sixapart.com/svn/memcached/ memcached
+  source: http://www.danga.com/memcached/dist/memcached-1.2.4.tar.gz
+
+# Libmemcache
+- source: http://people.freebsd.org/~seanc/libmemcache/libmemcache-1.4.0.rc2.tar.bz2
+  patch: http://gijsbert.org/downloads/cmemcache/libmemcache-1.4.0.rc2.patch
+
+# Cmemcached
+- source: http://gijsbert.org/downloads/cmemcache/cmemcache-0.91.tar.bz2

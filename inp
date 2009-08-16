@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+if [ -z $1 ]
+then
+	  Filename=list  # Default, if no filename specified.
+else
+	    Filename="$1"
+fi  
+
+while read line  # Why is variable $name in quotes?
+do     # Reads from $Filename, rather than stdin.
+   echo $line
+done <$Filename   # Redirects stdin to file $Filename. 
+
+exit 0
